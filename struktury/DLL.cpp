@@ -140,5 +140,14 @@ void ListaDwukierunkowa::Wyswietl() {
     }
     cout << "nullptr\n";
 }
+int ListaDwukierunkowa::Rozmiar() {
+    int rozmiar = 0;
+    DLLNode* wezel = head;
+    while (wezel != nullptr) {
+        rozmiar++;
+        wezel = wezel->NastepnyWezel;
+    }
+    return rozmiar;
+}
 
 

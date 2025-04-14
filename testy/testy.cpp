@@ -1,7 +1,5 @@
-#include "..\struktury\SLL.h"
-#include "..\struktury\SLL.cpp"
-#include "..\struktury\DLL.h"
-#include "..\struktury\DLL.cpp"
+#include "SLL.h"
+#include "DLL.h"
 #include <iostream>
 #include <chrono>
 #include <cstdlib>
@@ -160,7 +158,7 @@ void wypelnijTabliceLosowymiLiczbami(int* tablica, int rozmiar) {
     }
 }
 
-int main() {
+/*int main() {
 
     srand(static_cast<unsigned>(time(nullptr)));
     ListaJednokierunkowa sList;
@@ -178,7 +176,7 @@ int main() {
     testujUsunWyswietlDwukierunkowa(&ListaDwukierunkowa::UsunHead, dList, tablica, rozmiar);
 
     return 0;
-}
+}*/
 
 
 

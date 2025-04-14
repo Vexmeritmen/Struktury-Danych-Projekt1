@@ -119,3 +119,12 @@ void ListaJednokierunkowa::Wyswietl() {
     }
     cout << "nullptr\n";
 }
+int ListaJednokierunkowa::Rozmiar() {
+    int rozmiar = 0;
+    SLLNode* wezel = head;
+    while (wezel != nullptr) {
+        rozmiar++;
+        wezel = wezel->NastepnyWezel;
+    }
+    return rozmiar;
+}

@@ -24,6 +24,7 @@ public:
     void UsunLosowo(int index);
     void Znajdz(int val);
     void Wyswietl();
+    int Rozmiar();
 };
 
 #endif
