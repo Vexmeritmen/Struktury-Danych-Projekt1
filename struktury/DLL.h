@@ -1,6 +1,7 @@
 #ifndef DDL_H
 #define DDL_H
-
+//Deklarujemy strukturę, value odpowiada wartości "węzła", Następny Węzeł to wskaźnik do następnego węzła, a Poprzedni Węzeł to wskaźnik do poprzedniego węzła
+//Wskaźnik do następnego węzła i poprzedniego węzła jest inicjowany jako nullptr, ponieważ nie ma następnego węzła na początku
 struct DLLNode {
     int value;
     DLLNode* PoprzedniWezel;
