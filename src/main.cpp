@@ -11,28 +11,30 @@
 #include "test_sprawozdanie.h"
 using namespace std;
 
-
+//menu główne
 int main() {
+    //inicjalizacja tablic
     ListaJednokierunkowa sList;
     ArrayList aList;
     ListaDwukierunkowa dList;
     int run = true;
+    //tablica rozmiarów do testów
     int rozmiary[] = {5000,8000,10000,16000,25000,40000,60000,80000,100000,250000,500000};
     while (run) {
-
+        //menu główne
         cout << "Wybierz co chcesz zrobić: " <<endl;
         cout << "1. Tablica Dynamiczna" << endl;
         cout << "2. Lista Jednokierunkowa" << endl;
         cout << "3. Lista Dwukierunkowa" << endl;
         cout << "4. Testy zbiorcze" << endl;
-        cout << "5. Zakończ.";
+        cout << "5. Zakończ." << endl;
         cout << "Podaj numer: ";
         cout << endl << endl;
         int wybor;
         cin >> wybor;
         switch(wybor) {
             case 1: {
-
+                //menu tablicy dynamicznej
                 cout << "Wybierz co chcesz zrobić: " <<endl;
                 cout << "1. Wypełnij losowo" << endl;
                 cout << "2. Dodaj na początek" << endl;
@@ -124,7 +126,7 @@ int main() {
                 break;
             }
             case 2: {
-
+                //menu listy jednokierunkowej
                 cout << "Wybierz co chcesz zrobić: " <<endl;
                 cout << "1. Wypełnij losowo" << endl;
                 cout << "2. Dodaj na początek" << endl;
@@ -218,7 +220,7 @@ int main() {
                 }
             }
             case 3: {
-
+                //menu listy dwukierunkowej
                 cout << "Wybierz co chcesz zrobić: " <<endl;
                 cout << "1. Wypełnij losowo" << endl;
                 cout << "2. Dodaj na początek" << endl;
@@ -311,6 +313,7 @@ int main() {
                 break;
             }
             case 4:{
+            //przeprowadzenie testów do sprawozdania
             test_do_sprawozdania(rozmiary);
             break;
         }
